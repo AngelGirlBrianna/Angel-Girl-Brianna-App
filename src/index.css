@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+/* Custom prose styles for WordPress content */
+.prose {
+  @apply text-slate-700 dark:text-slate-300 leading-relaxed;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-slate-900 dark:text-white font-bold mt-8 mb-4;
+}
+
+.prose h1 { @apply text-3xl; }
+.prose h2 { @apply text-2xl; }
+.prose h3 { @apply text-xl; }
+
+.prose p {
+  @apply mb-6;
+}
+
+.prose ul, .prose ol {
+  @apply mb-6 ml-6;
+}
+
+.prose ul { @apply list-disc; }
+.prose ol { @apply list-decimal; }
+
+.prose img {
+  @apply rounded-2xl my-8 shadow-lg w-full h-auto;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-600 pl-6 italic my-8 text-slate-500 dark:text-slate-400;
+}
+
+.prose a {
+  @apply text-blue-600 dark:text-blue-400 font-semibold hover:underline;
+}
+
+.prose figure {
+  @apply my-8;
+}
+
+.prose figcaption {
+  @apply text-center text-sm text-slate-400 mt-2;
+}
