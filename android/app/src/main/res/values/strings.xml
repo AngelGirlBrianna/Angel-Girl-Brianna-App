@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Angel Girl Brianna</string>
+    <string name="title_activity_main">Angel Girl Brianna</string>
+    <string name="package_name">com.angelgirlbrianna.news</string>
+    <string name="custom_url_scheme">com.angelgirlbrianna.news</string>
+</resources>
